@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply font-medium py-2 px-4 rounded transition-colors;
+  }
+  
+  .btn-primary {
+    @apply bg-blue-500 hover:bg-blue-600 text-white;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-200 hover:bg-gray-300 text-gray-800;
+  }
+  
+  .btn-success {
+    @apply bg-green-500 hover:bg-green-600 text-white;
+  }
+  
+  .btn-danger {
+    @apply bg-red-500 hover:bg-red-600 text-white;
+  }
+  
+  .form-input {
+    @apply w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary-500;
+  }
+}
+
+/* Camera component styles */
+.camera-container {
+  position: relative;
+}
+
+.camera-controls {
+  display: flex;
+  justify-content: center;
+}
+
+/* Simple transitions */
+.fade-in {
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+} 
